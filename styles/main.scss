@@ -1,0 +1,95 @@
+@use"vendor/normalize";
+@use"partials/colors";
+
+body {
+    background-color: colors.$body-background;
+  }
+  
+  .navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: colors.$darker-background;
+  
+    li {
+      float: right;
+  
+      a {
+        display: block;
+        color: colors.$body-background;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+  
+        &:hover {
+          background-color: colors.$dark-background;
+          text-decoration: underline;
+        }
+      }
+    }
+  
+    ul {
+      :first-child {
+        float: left;
+        font-size: large;
+      }
+    }
+  }
+  
+  .move-right {
+    float: right;
+    padding: 70px;
+    margin: 15px;
+  }
+  
+  .words {
+    align-content: center;
+    text-align: center;
+    padding: 70px;
+    margin: 15px;
+  }
+  
+  h2 {
+    color: colors.$secondary-font-color;
+    font-size: 40px;
+    font-style: italic;
+  }
+  
+  h1 {
+    font-size: 50px;
+    
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  li a {
+    color: colors.$secondary-font-color;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+  
+  p {
+    font-size: 2.7em;
+    text-align: center;
+    color: colors.$primary-font-color;
+  }
+  
+  article.words > * {
+    margin: 7px 0;
+  }
+  
+  section {
+    margin-top: 70px;
+  }
+  footer {
+background-color: colors.$dark-background;
+clear: both;
+color: colors.$body-background;
+align-self: center;
+align-content: center;
+  }
